@@ -1,0 +1,69 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Grid-Revice</title>
+    <style>
+        /* .container {
+            /* border: 1px solid red; */
+        /* display: grid; */
+        /* grid-template-columns: repeat(3, 1fr); */
+        /* grid-template-columns: auto auto auto; */
+
+        /* .2 row propery */
+        /* grid-template-rows: repeat(3, 1fr); */
+        /* grid-template-rows: 100px 400px;
+         */
+
+        /* .same {
+            border: 1px solid green;
+        } */
+
+        .container {
+            display: grid;
+            height: 100vh;
+            grid-template-areas:
+            'header header header '
+            'sidebar main main '
+            'footer footer footer'
+
+            ;
+        }
+
+        .headr {
+            background-color: red;
+            grid-area: header;
+        }
+
+        .footer {
+            background-color: green;
+            grid-area: footer;
+
+        }
+
+        .sidebar {
+            background-color: yellow;
+            grid-area: sidebar;
+
+        }
+
+        .main {
+            background-color: blue;
+            grid-area: main;
+
+        }
+    </style>
+</head>
+
+<body>
+    <div class="container">
+        <div class="headr">header</div>
+        <div class="footer">footer</div>
+        <div class="sidebar">sidebar</div>
+        <div class="main">main</div>
+    </div>
+</body>
+
+</html>

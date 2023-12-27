@@ -1,0 +1,110 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Flex</title>
+    <style>
+        .container {
+            background-color: beige;
+            margin: 2px;
+            padding: 2px;
+            border: 5px solid;
+            display: flex;
+            height: 800px;
+            /* flex-direction: column; */
+
+            /* .2 */
+            /* flex-wrap: wrap; */
+            /* flex-wrap: wrap-reverse ; */
+
+            /* .3 */
+
+            /* justify-content:  center; */
+            /* justify-content:  space-between; */
+            /* justify-content:  space-around */
+            /* justify-content:  space-evenly; */
+            justify-content: start;
+            align-items: start;
+
+
+
+            /* .4 aline item */
+            /* align-items: center; */
+            /* align-items: start; */
+            /* align-items: end; */
+            /* align-items: self-end; */
+
+            /* .5 */
+            /* align-content: start; */
+            align-content: end;
+
+            /* .6 */
+
+
+        }
+
+        .box {
+            /* height: 200px;
+            width: 200px; */
+            border: 2px solid red;
+            margin: 2px;
+            padding: 2px;
+        }
+
+        #box1 {
+            background-color: aqua;
+            align-self: center;
+
+        }
+
+        #box2 {
+            background-color: blue;
+            /* flex-shrink: 4; */
+            /* flex-grow: 2; */
+
+        }
+
+        #box3 {
+            background-color: orange;
+
+        }
+
+        #box4 {
+            background-color: brown;
+            /* flex-basis: 400px; */
+
+
+       /* align-items: self-end; */
+      /* justify-content: end; */
+      /* flex-direction: column-reverse;
+      justify-content: space-between; */
+
+      /* justify-content: center;
+      align-items: flex-end;
+      flex-direction: row-reverse; */
+
+/* align-self: end; */
+flex-direction: column;
+flex-wrap: wrap-reverse;
+align-content: center;
+justify-content: center;
+align-content: space-between;
+align-content: space-between;
+
+
+        }
+    </style>
+</head>
+
+<body>
+    <div class="container">
+        <div class="box" id="box1">Box-1</div>
+        <div class="box" id="box2">Box-2</div>
+        <div class="box" id="box3">Box-3</div>
+        <div class="box" id="box4">Box-4</div>
+    </div>
+</body>
+
+</html>

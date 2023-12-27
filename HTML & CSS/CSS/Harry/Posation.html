@@ -1,0 +1,60 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>position</title>
+    <style>
+        .conatiner {
+            background-color: khaki;
+            border: 2px solid black;
+            height: 2000px;
+        }
+
+        /* position: static (default), absolute, relative,fixed,sticky */
+        .box {
+            display: inline-block;
+            border: 2px solid red;
+            width: 150px;
+            height: 150px;
+            margin: 2px;
+        }
+
+        #box-3 {
+
+            /* 1. relative ti his normal position */
+            /* position: relative; */
+            /* top: 34px; */
+            /* left: 34px; */
+
+
+            /* 2. absolute : relative to the position of its first parents*/
+            /* position: absolute;
+            top: 34px;
+            left: 34px; */
+
+            /* 3. fixed: position the element relative to browser window */
+            /* position: fixed;
+            right: 4px;
+            bottom: 2px; */
+
+            /* .4 Sticky */
+
+            position: sticky;
+            top: 3px;
+
+        }
+    </style>
+</head>
+
+<body>
+    <div class="conatiner">
+        <div class="box" id="box-1"></div>
+        <div class="box" id="box-2"></div>
+        <div class="box" id="box-3"></div>
+        <div class="box" id="box-4"></div>
+    </div>
+</body>
+
+</html>

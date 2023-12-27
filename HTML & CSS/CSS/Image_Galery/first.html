@@ -1,0 +1,59 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width='device-width', initial-scale=1.0">
+    <title>Image</title>
+    <style>
+        body {
+            background-color: rebeccapurple;
+        }
+
+        h1{
+            text-align: center;
+        }
+
+        .mainDiv {
+            width: 70%;
+            height: 500px;
+            position: absolute;
+            left: 50%;
+            top: 50%;
+            background-image: url("https://picsum.photos/id/237/1000/500");
+            background-size: 100% 100%;
+            transform: translate(-50%, -50%);
+            box-shadow: 1px 2px 10px 5px wheat;
+            animation: slide 9s infinite linear;
+
+        }
+
+        @keyframes slide {
+            0% {
+                background-image: url("https://picsum.photos/seed/picsum/1000/500");
+            }
+
+            35% {
+                background-image: url("https://picsum.photos/1000/500?grayscale");
+
+            }
+
+            75% {
+                background-image: url("https://picsum.photos/id/870/1000/500?grayscale&blur=2");
+            }
+            100%{
+                background-image: url("https://picsum.photos/1000/500");
+            }
+
+        }
+    </style>
+</head>
+
+<body>
+    <h1>Image Slider</h1>
+    <div class="mainDiv">
+
+    </div>
+</body>
+
+</html>

@@ -1,0 +1,24 @@
+* {
+    margin: 0;
+    padding: 0;
+    box-sizing: border-box;
+}
+
+
+
+.container {
+    height: 100vh;
+    width: 100vw;
+    overflow-x: none;
+}
+
+.navcontainer {
+    width: 100vh;
+    background-color: rgb(108, 108, 191);
+    min-height: 80px;
+}
+
+
+#navlist {
+    list-style: none;
+}

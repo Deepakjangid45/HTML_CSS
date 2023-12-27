@@ -1,0 +1,39 @@
+* {
+    margin: 0;
+    padding: 0;
+    box-sizing: border-box;
+}
+
+.container {
+    /* height: 100vh; */
+    height: 900px;
+    width: 100vw;
+    background-color: #8bc6ec;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+}
+
+.card {
+    width: 360px;
+    height: 570px;
+    background-color: white;
+    border-radius: 20px;
+    display: flex;
+    flex-direction: column;
+    gap: 30px;
+    padding: 20px;
+}
+
+.card img {
+    height: 57%;
+    border-radius: 10px;
+}
+
+h2 {
+    font-weight: bold;
+    font-size: 1.7rem;
+}
+p{
+    font-size: 1.2em;
+}

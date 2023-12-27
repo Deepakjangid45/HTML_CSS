@@ -1,0 +1,55 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>First</title>
+    <style>
+        .container {
+            display: grid;
+            border: 2px solid;
+            grid-template-columns: repeat(3, 1fr);
+            grid-gap: 20px;
+        }
+
+        .item {
+            border: 1px solid green;
+        }
+
+        #boxA {
+            grid-column-start: 1;
+            grid-column-end: 2;
+            grid-row: 1/3;
+        }
+        
+        #boxB {
+            grid-column-start: 2;
+            grid-column-end: 3;
+            grid-row: 3/4;
+
+        }
+
+        #boxC {
+            grid-column-start: 1;
+            grid-column-end: 2;
+        }
+
+        #boxD {
+            grid-column: 1/3;
+        }
+    </style>
+</head>
+
+<body>
+    <div class="container">
+        <div class="item" id="boxA">A</div>
+        <div class="item" id="boxB">B</div>
+        <div class="item" id="boxC">C</div>
+        <div class="item" id="boxD">D</div>
+        <!-- <div class="item" id="boxF">E</div> -->
+
+    </div>
+</body>
+
+</html>

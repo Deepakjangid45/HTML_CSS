@@ -1,0 +1,47 @@
+* {
+    box-sizing: border-box;
+
+}
+
+.container {
+    display: flex;
+    border: 1px dotted black;
+    height: 700px;
+
+}
+
+.item {
+    width: 500px;
+    /* height: 1200px; */
+}
+
+#father {
+    padding: 100px;
+    margin: 20px;
+    border: 1px dotted black;
+}
+
+#uncle {
+    padding: 10px;
+    margin: 20px;
+    border: 1px dotted black;
+}
+
+#person1 {
+    padding: 10px;
+    border: 1px dotted black;
+}
+
+#child-1 {
+    border: 1px dotted black;
+    height: 500px;
+
+}
+
+#child-2 {
+    border: 1px dotted black;
+}
+
+#child-3 {
+    border: 1px dotted black;
+}

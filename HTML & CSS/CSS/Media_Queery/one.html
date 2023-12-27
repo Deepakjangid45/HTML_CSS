@@ -1,0 +1,65 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>One</title>
+    <style>
+        * {
+            background-color: rgb(62, 56, 56);
+        }
+
+        .container {
+            border: 2px solid black;
+            background-color: bisque;
+            display: flex;
+            flex-direction: row;
+            width: 450px;
+            padding: 2px;
+            margin: 10px;
+        }
+
+        #boxlef {
+            background-color: aquamarine;
+            border: 2px solid blue;
+            width: 47%;
+            margin: 2px;
+            padding: 2px;
+            display: flex;
+            flex-direction: column;
+        }
+
+        #boxright {
+            background-color: yellow;
+            border: 2px solid brown;
+            width: 47%;
+            margin: 2px;
+            padding: 2px;
+        }
+
+        p {
+            border: 1px solid red;
+        }
+
+        @media(max-width:640px) {
+            .container {
+                flex-direction: column;
+            }
+        }
+    </style>
+</head>
+
+<body>
+    <div class="container">
+        <div id="boxlef">
+            <p>Text1</p>
+            <p>Text2</p>
+        </div>
+        <div id="boxright">
+            <img src="https://picsum.photos/100/100" alt="">
+        </div>
+    </div>
+</body>
+
+</html>

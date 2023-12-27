@@ -1,0 +1,84 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+    <meta charset="UTF-8" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <title>Z_index</title>
+    <style>
+        .para {
+            border: 2px solid green;
+            background-color: aquamarine;
+            /* overflow: hidden; */
+            /* overflow: scroll; */
+            overflow-x: auto;
+            padding: 20px;
+            height: 100px;
+        }
+
+        .container {
+            position: relative;
+        }
+
+        .box {
+            position: absolute;
+            width: 100px;
+            height: 100px;
+            font-size: 20px;
+            color: steelblue;
+        }
+        .box1{
+            background-color: red;
+            z-index: 1;
+        }
+        .box2{
+            background-color: green;
+            left: 50px;
+            top: 50px;
+            z-index: 2;
+        }
+        .box3{
+            background-color: blue;
+            left: 70px;
+            top: 70px;
+            z-index: 2;
+        }
+    </style>
+</head>
+
+<body>
+    <p class="para">
+        Lorem ipsum dolor sit amet consectetur adipisicing elit. Exercitationem
+        consectetur aliquam, necessitatibus molestias soluta odio quo deleniti
+        nemo fugit ipsam quidem, mollitia ratione, ducimus quam asperiores
+        distinctio ut voluptatem eligendi. Lorem ipsum dolor sit amet consectetur
+        adipisicing elit. Ab quo vero saepe iure a quidem ducimus omnis aspernatur
+        corporis fugiat quam delectus consequatur laboriosam iste, esse ratione
+        exercitationem pariatur nisi. Dolor corporis perferendis placeat, qui eius
+        sunt sequi error soluta libero porro illum at consequuntur maxime esse
+        mollitia maiores sapiente dignissimos voluptas cum iste? Culpa aliquam
+        corporis qui perspiciatis delectus porro optio, illum neque dolorem?
+        Eligendi quo explicabo non ullam sit nobis temporibus quos iste qui quis
+        animi itaque deleniti repellendus commodi corrupti facere minus possimus
+        id cupiditate accusamus odit, aut voluptatum eius? Voluptatum, assumenda
+        sint, alias obcaecati perferendis fugiat cum velit ullam delectus modi
+        illo repudiandae autem! Ut, dolore quis aliquam libero velit atque
+        repellat error asperiores, sit perspiciatis blanditiis vel vitae. Magnam
+        reprehenderit quae soluta, vel odit quis id consequuntur vitae sunt
+        voluptatem repudiandae fugit corrupti beatae ullam cupiditate saepe
+        debitis! Dicta quo unde beatae nulla facere dolore animi totam sapiente
+        perspiciatis eveniet iste sed, libero aliquam illum commodi quod quis
+        tenetur laborum autem impedit consectetur voluptates. Laborum quos in
+        dolorum? Ratione quibusdam, voluptate adipisci dolorum alias quos optio!
+        Fuga, dignissimos iure, eaque modi eum culpa soluta nisi nulla quibusdam
+        nobis voluptatibus. Eum amet doloremque natus quas ea!
+    </p>
+
+    <div class="container">
+        <div class="box box1">Z-index 1</div>
+        <div class="box box2">Z-index 2</div>
+        <div class="box box3">Z-index 3</div>
+    </div>
+</body>
+
+</html>

@@ -1,0 +1,52 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>filter</title>
+    <style>
+        /* div {
+            border: 2px solid black;
+            width: 500px;
+            height: 500px;
+        } */
+
+        img {
+            /* filter: blur(7px); */
+            /* filter: brightness(2); */
+            /* filter: grayscale(0.8); */
+            /* filter: hue-rotate(180deg); */
+            /* filter: drop-shadow(30px 10px 2px green); */
+        }
+
+        .box {
+            position: absolute;
+            width: 100px;
+            height: 100px;
+            background-color: blue;
+            border-radius: 50%;
+            animation: move 1s ease-in-out 0s 1;
+        }
+
+
+        @keyframes move {
+            from {
+                left: 0px;
+            }
+
+            to {
+                left: 200px;
+            }
+        }
+    </style>
+</head>
+
+<body>
+    <div>
+        <!-- <img src="https://picsum.photos/200/300" alt=""> -->
+        <div class="box"></div>
+    </div>
+</body>
+
+</html>

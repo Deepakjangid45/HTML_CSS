@@ -1,0 +1,31 @@
+* {
+    background-color: black;
+}
+
+.container {
+    background-color: red;
+    height: 700px;
+    /* width: 900px; */
+    display: grid;
+    grid-template-columns: 1fr 1fr 1fr;
+    grid-template-rows: 43px 1fr 34px;
+    row-gap: 10px;
+    column-gap: 10px;
+    justify-items: start;
+}
+
+.item {
+    background-color: aqua;
+    height: 122px;
+    width: 122px;
+}
+
+.item1 {
+    grid-column-start: 1;
+    grid-column-end: 4;
+}
+
+.footer{
+    grid-column-start: 1;
+    grid-column-end: 5;
+}
